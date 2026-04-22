@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scribble tasks · messy task manager</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inter font import */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+    <div class="subhead">Enter your tasks</div>
+
+    <div class="task-card">
+      <div class="input-area">
+        <input type="text" id="taskInput" placeholder="e.g., finish project, call mom, go to gym...">
+        <button id="addTaskBtn">
+          <span>+</span> add
+        </button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <button class="filter-chip active" data-filter="all">all tasks</button>
+      <button class="filter-chip" data-filter="pending">in progress</button>
+      <button class="filter-chip" data-filter="completed">done deals</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <div class="stats" id="taskStats">
+      <span>📌 loading...</span>
+      <span>✎ double-click to edit</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
