@@ -1,5 +1,3 @@
-// Task Manager App - Handcrafted UI Version
-
 class TaskManager {
   constructor() {
     this.tasks = this.loadTasks();
